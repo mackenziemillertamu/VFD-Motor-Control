@@ -9,3 +9,9 @@ Sep 16
 Andrew:
   This week- began learning Altium and started on PCB work.
   Next week - Work on subsystem intro and buck converter schematic
+
+Sep 24 -
+Ryan:
+  This week - Add labels to the start/stop button and text box, and changed the text box to a slider to improve usability and added more debugging tools and make it more user-friendly
+  Next week - Improve visual layout of UI, find out what ports are where on development board and how they link to C code, work on reports
+
