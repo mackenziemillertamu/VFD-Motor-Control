@@ -1,17 +1,26 @@
 Weekly TA Updates
 
-Sep 16
+Sep 17
 Mackenzie: 
   This week - design (almost) final schematic for pcb, start subsystem intro project
   Next week - finish subsystem intro, design tachometer schematic
 
-Sep 16
+Sep 17
 Andrew:
-  This week- began learning Altium and started on PCB work.
+  This week - began learning Altium and started on PCB work.
   Next week - Work on subsystem intro and buck converter schematic
 
-Sep 24 -
+Sep 17
+Aidan: 
+  This week - completed CONOPS Report; calculated rectifier scr values; calculated dc link capacitor value; calculated DC link inductor value
+  Next week - start subsystem intro project; complete quiz; complete rectifier schematic component; complete power control schematic component; complete schematic layout
+
+Sep 24
+Aidan:
+  This week - started FSR, ICD, execution/validation report; started subsystem intro project (SIP); completed SIP schematic component; completed SIP PCB component; completed quiz; completed rectifier schematic component; completed power control schematic component; started schematic layout
+  Next week - complete FSR, ICD, execution/validation report; complete project introduction presentation; complete SIP schematic layout; complete SIP PCB layout; complete schematic layout
+
+Sep 24
 Ryan:
   This week - Add labels to the start/stop button and text box, and changed the text box to a slider to improve usability and added more debugging tools and make it more user-friendly
   Next week - Improve visual layout of UI, find out what ports are where on development board and how they link to C code, work on reports
-
