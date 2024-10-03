@@ -24,3 +24,8 @@ Sep 24
 Ryan:
   This week - Add labels to the start/stop button and text box, and changed the text box to a slider to improve usability and added more debugging tools and make it more user-friendly
   Next week - Improve visual layout of UI, find out what ports are where on development board and how they link to C code, work on reports
+
+Oct 1
+Aidan:
+  This week - completed FSR, ICD, execution/validation report; completed project introduction presentation; worked on SIP schematic layout
+  Next week - complete subsystem intro project; complete schematic layout; start PCB layout; order parts
