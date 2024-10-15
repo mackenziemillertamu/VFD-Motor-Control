@@ -26,6 +26,10 @@ Ryan:
   Next week - Improve visual layout of UI, find out what ports are where on development board and how they link to C code, work on reports
 
 Oct 1
+Mackenzie: 
+  This week - completed FSR, ICD, execution/validation report, an dproject introduction presentation; worked on sub system intro
+  Next week - finish sub system intro
+
 Aidan:
   This week - completed FSR, ICD, execution/validation report; completed project introduction presentation; worked on SIP schematic layout
   Next week - complete subsystem intro project; complete schematic layout; start PCB layout; order parts
@@ -34,24 +38,20 @@ Ryan:
   This week - completed required reports for this week's submission and gave project introduction presentation; began transferring code to MPLAB for subsystem introduction project
   Next week - Debug MPLab code and figure out compilation issues
 
-Mackenzie: 
-  This week - completed FSR, ICD, execution/validation report, an dproject introduction presentation; worked on sub system intro
-  Next week - finish sub system intro
-
 Oct 8
-Ryan:
-  This week - Worked more on debugging subsystem intro project by downloading extra necessary software and reading the dev board and microcontroller's user's manual
-  Next week - Fully debug and complete the subsystem intro project and submit the parts order form
-
 Mackenzie: 
   This week - finished subsystem intro project, turned schematic into pcb layout
   Next week - continue to work on layout
 
-Oct 15
 Ryan:
-  This week - Finished the subsystem introduction project and submitted the parts order form to demonstrate on the development board.
-  Next week - Demonstrate subsystem intro project to Professor during Blitz on Friday with the dev board; start implementing User Interface onto development board; give update presentation
+  This week - Worked more on debugging subsystem intro project by downloading extra necessary software and reading the dev board and microcontroller's user's manual
+  Next week - Fully debug and complete the subsystem intro project and submit the parts order form
 
+Oct 15
 Mackenzie: 
   This week: continue working on PCB layout
   Next week: start routing layout, work on update presentation
+
+Ryan:
+  This week - Finished the subsystem introduction project and submitted the parts order form to demonstrate on the development board.
+  Next week - Demonstrate subsystem intro project to Professor during Blitz on Friday with the dev board; start implementing User Interface onto development board; give update presentation
