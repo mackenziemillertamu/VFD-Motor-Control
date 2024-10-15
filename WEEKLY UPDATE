@@ -5,22 +5,22 @@ Mackenzie:
   This week - design (almost) final schematic for pcb, start subsystem intro project
   Next week - finish subsystem intro, design tachometer schematic
 
-Sep 17
 Andrew:
   This week - began learning Altium and started on PCB work.
   Next week - Work on subsystem intro and buck converter schematic
 
-Sep 17
 Aidan: 
   This week - completed CONOPS Report; calculated rectifier scr values; calculated dc link capacitor value; calculated DC link inductor value
   Next week - start subsystem intro project; complete quiz; complete rectifier schematic component; complete power control schematic component; complete schematic layout
+
+Ryan:
+  This week - Fixed compiler issues (reinstalled/updated Ubuntu to use for compiling and running); got interface code to display a window with a singular button; added several displays such as the start/stop button, a text input for setpoint, and voltage, current, and motor speed displays 
 
 Sep 24
 Aidan:
   This week - started FSR, ICD, execution/validation report; started subsystem intro project (SIP); completed SIP schematic component; completed SIP PCB component; completed quiz; completed rectifier schematic component; completed power control schematic component; started schematic layout
   Next week - complete FSR, ICD, execution/validation report; complete project introduction presentation; complete SIP schematic layout; complete SIP PCB layout; complete schematic layout
 
-Sep 24
 Ryan:
   This week - Add labels to the start/stop button and text box, and changed the text box to a slider to improve usability and added more debugging tools and make it more user-friendly
   Next week - Improve visual layout of UI, find out what ports are where on development board and how they link to C code, work on reports
@@ -29,3 +29,17 @@ Oct 1
 Aidan:
   This week - completed FSR, ICD, execution/validation report; completed project introduction presentation; worked on SIP schematic layout
   Next week - complete subsystem intro project; complete schematic layout; start PCB layout; order parts
+
+Ryan:
+  This week - completed required reports for this week's submission and gave project introduction presentation; began transferring code to MPLAB for subsystem introduction project
+  Next week - Debug MPLab code and figure out compilation issues
+
+Oct 8
+Ryan:
+  This week - Worked more on debugging subsystem intro project by downloading extra necessary software and reading the dev board and microcontroller's user's manual
+  Next week - Fully debug and complete the subsystem intro project and submit the parts order form
+
+Oct 15
+Ryan:
+  This week - Finished the subsystem introduction project and submitted the parts order form to demonstrate on the development board.
+  Next week - Demonstrate subsystem intro project to Professor during Blitz on Friday with the dev board; start implementing User Interface onto development board; give update presentation
