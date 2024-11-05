@@ -72,3 +72,9 @@ Aidan:
 Ryan:
   This week - Demo'd subsystem introduction project, figured out how to use buttons
   Next week - Implement latch logic for buttons, figure out how to use potentiometer, use potentiometer to generate PWM signals
+
+Oct 29
+Ryan:
+  This week - Latch logic for buttons, potentiometer PWM programming and debugging
+  Next week - Oscilloscope reading PWM signals from Potentiometer
+
