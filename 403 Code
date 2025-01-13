@@ -1,0 +1,125 @@
+/*
+ * File:   main.c
+ * Author: ryan1
+ *
+ * Created on October 1, 2024, 12:04 PM
+ */
+
+#include "mcc_generated_files/system/system.h" // include the files created by MPLAB Code Configurator
+#include "mcc_generated_files/system/pins.h" // MPLAB Code Configurator
+#include "mcc_generated_files/adc/adc1.h" // MCC 
+#include "mcc_generated_files/pwm/sccp1.h" // MCC
+#include "mcc_generated_files/pwm/sccp3.h" // MCC
+#include "mcc_generated_files/pwm/sccp2.h" // Includes system configuration
+
+#define FCY 4000000UL // Assuming Fosc = 8 MHz, FCY = Fosc / 2
+
+#include <libpic30.h> // include library required for __delay_ms() DONT PUT THIS ABOVE THE DEFINE FCY LINE
+#include <stdbool.h> // include boolean library
+#include <stdint.h> // include integer library
+#include <math.h> // include math library
+
+#define TABLE_SIZE 256  // Define the number of points in the sine table
+#define PWM_MAX 4095    // Max PWM value for 12-bit resolution
+#define M_PI 3.14159265358979323846 // defining pi variable
+#define PWM_FREQUENCY 1000 // Frequency that the PWM was set to
+
+uint16_t potValue; // value that potentiometer is set to (0-4095)
+uint16_t dutyCycle; // duty cycle parameter
+
+uint16_t sine_table[TABLE_SIZE];  // Lookup table for sine values
+uint16_t phase_offset_a = 0;      // Start of phase A in table
+uint16_t phase_offset_b = TABLE_SIZE / 3;  // Start of phase B (120° phase shift)
+uint16_t phase_offset_c = (2 * TABLE_SIZE) / 3;  // Start of phase C (240° phase shift)
+
+uint16_t map(uint16_t x, uint16_t in_min, uint16_t in_max, uint16_t out_min, uint16_t out_max) { // map function
+    return (uint16_t)(((uint32_t)(x - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min); // will be used to scale potValue from 0-4095 to 10-60
+}
+
+// Function to initialize the sine table
+void initialize_sine_table() {
+    for (int i = 0; i < TABLE_SIZE; i++) { // for loop to make sine table of size TABLE_SIZE
+        float angle = (2 * M_PI * i) / TABLE_SIZE; // make an angle variable that has values that are 2pi/TABLE_SIZE and multiply by the iteration
+        sine_table[i] = (uint16_t)((sin(angle) * 0.5 + 0.5) * PWM_MAX); // create sine table: sin of angle(radians) but change range of values from [-1,1] to [0,1] then to [0,4095]
+    }
+}
+
+// Function to calculate increment that program steps through sine table
+uint16_t calculate_step_increment(uint16_t potValue) {
+    uint16_t target_freq = map(potValue, 0, 4096, 10, 60); // set target frequency to result of map function
+    printf("Target Frequency: %u, ", target_freq); // print what the result of above line is
+    return (uint16_t)((TABLE_SIZE * (uint32_t)target_freq) / PWM_FREQUENCY);  // calculate and return step increment
+}
+
+// Function to filter and set the duty cycles for each of the three phases
+void set_three_phase_pwm(uint16_t potValue) {   
+    uint16_t duty_a = sine_table[phase_offset_a % TABLE_SIZE]; // using phase offset and the sin table, set the duty cycle for A
+    uint16_t duty_b = sine_table[phase_offset_b % TABLE_SIZE]; // same for B
+    uint16_t duty_c = sine_table[phase_offset_c % TABLE_SIZE]; // same for C
+    
+    // Apply additional scaling to limit duty cycle range (e.g., 10%?90%)
+    duty_a = 0.8 * duty_a + 0.1 * PWM_MAX; // A
+    duty_b = 0.8 * duty_b + 0.1 * PWM_MAX; // B
+    duty_c = 0.8 * duty_c + 0.1 * PWM_MAX; // C
+    
+    // Set the PWM duty cycles for each phase
+    PWM1_DutyCycleSet(duty_a); // assign duty cycle of A to PWM1
+    PWM2_DutyCycleSet(duty_b); // B - PWM2
+    PWM3_DutyCycleSet(duty_c); // C - PWM3
+    printf("Duty Cycles: %u | %u | %u, ", duty_a, duty_b, duty_c); // print these duty cycles for debugging
+    
+    // Adjust phase offsets for the next cycle
+    uint16_t step_increment = calculate_step_increment(potValue); // run step increment function
+    printf("Increment: %d, ", step_increment); // print output of step increment function
+    phase_offset_a = (phase_offset_a + step_increment) % TABLE_SIZE; // recalculate phase offset for A based on current iteration for next iteration
+    phase_offset_b = (phase_offset_b + step_increment) % TABLE_SIZE; // B
+    phase_offset_c = (phase_offset_c + step_increment) % TABLE_SIZE; // C
+    printf("Offsets: %u | %u | %u\n\r", phase_offset_a, phase_offset_b, phase_offset_c);
+
+}
+
+/*
+    Main application
+*/
+
+int main(void)
+{
+    SYSTEM_Initialize();   // Initialize the system (clock, peripherals, etc.)
+    initialize_sine_table(); // Initialize sine table (function above)
+    __delay_ms(25); // delay 25ms before looping
+
+    printf("Hello, World!\r\n"); // Send a primary test string over UART1
+    
+    while (1)
+    {
+        
+        /*
+         Potentiometer Usage (will be used as the main motor speed controller)
+         */ 
+        
+        if (ADC1_IsConversionComplete(POT_PIN)) { // Enter for loop only if AC to DC Conversion is complete
+            potValue = ADC1_ConversionResultGet(POT_PIN); // set the result of this conversion (the position of the potentiometer) to the variable potValue
+        
+            /* Cap the potValue numbers (might not need this anymore since cap code was moved to duty cycle numbers)
+            if (potValue > 4000) { // too high
+                potValue = 4000; // ends up being ~99% duty cycle on oscilloscope
+            } else if (potValue < 41) { // too low
+                potValue = 41;
+            }
+             * */
+                        
+            printf("Pot: %d, ", potValue); // Print the potentiometer's value for debugging
+            
+            set_three_phase_pwm(potValue); // run main function to set the PWM values
+            
+        } else {
+            printf("ADC conversion not complete. "); // print this if ADC conversion didn't complete (this usually indicates that there is an error somewhere in the code)
+        }
+        
+        // Add tachometer output reading code here
+        
+        // Add code to display motor speed in print functions here
+       
+        
+    }    
+}
