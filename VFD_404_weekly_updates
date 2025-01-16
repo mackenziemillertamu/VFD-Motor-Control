@@ -14,5 +14,5 @@ Aidan:
   Next week - complete order 4; work on status update 1 presentation; work on validation plan; work on FSR v1; work on PCB v1
 
 Ryan:
-  Since 403 - 
-  Next week - 
+  Since 403 - Communicated with Drew about necessary components on microcontroller PCB
+  Next week - Fix frequency of PWM waves to range from 10Hz to 60Hz, fix voltage to be 120V, figure out how to demonstrate the output onto a load resistor
