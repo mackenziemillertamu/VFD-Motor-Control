@@ -1,0 +1,5 @@
+Change Component Designator: OldDesignator=P? NewDesignator=PIN
+Change Component Designator: OldDesignator=P? NewDesignator=POUT
+Change Net Name : Old Net Name=NetP?_1 New Net Name=NetPOUT_1
+Change Net Name : Old Net Name=NetP?_4 New Net Name=NetPIN_4
+Added Member To Class: ClassName=subsystem_intro_prj Member=Component PIN 620304124022

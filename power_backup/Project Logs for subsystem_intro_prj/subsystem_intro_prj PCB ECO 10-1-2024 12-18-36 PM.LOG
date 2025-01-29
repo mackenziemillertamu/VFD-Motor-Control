@@ -1,0 +1,6 @@
+Added Component: Designator=U?(TL061ACD)
+Added Pin To Net: NetName=NetR1_2 Pin=U?-2
+Added Pin To Net: NetName=GND Pin=U?-3
+Added Pin To Net: NetName=NetP?_6 Pin=U?-6
+Added Member To Class: ClassName=subsystem_intro_prj Member=Component P? 662108145021
+Added Member To Class: ClassName=subsystem_intro_prj Member=Component U? TL061ACD
