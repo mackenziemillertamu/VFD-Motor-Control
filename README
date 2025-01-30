@@ -1,1 +1,6 @@
 "Your project should have a README file that explains the project and what is contained in the repository"
+
+Traditional motor control systems cannot adjust to varying load demands, resulting in poor energy efficiency, excessive heat generation, and premature component failure​. 
+​Our project is to develop a Variable Frequency Drive (VFD) motor control system to adjust frequency and voltage to load demands​. 
+The github repository that we created includes schematics, PCB routes, and the code that was used throughout our project so that we may not lose progress if something happens.
+
