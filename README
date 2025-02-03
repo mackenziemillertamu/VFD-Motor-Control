@@ -2,4 +2,4 @@
 
 Traditional motor control systems cannot adjust to varying load demands, resulting in poor energy efficiency, excessive heat generation, and premature component failure​. ​Our project is to develop a Variable Frequency Drive (VFD) motor control system to adjust frequency and voltage to load demands​. 
 
-The github repository includes altium files, firmware code files, presentations pdfs, and report pdfs to act as a backup of our progess in the event of an emergency.
+This github repository includes altium files, firmware code files, presentations pdfs, and report pdfs to act as a backup of our progess in the event of an emergency.
