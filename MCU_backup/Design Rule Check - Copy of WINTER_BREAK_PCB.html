@@ -1,0 +1,437 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD24\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">1/21/2025</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">3:18:28 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc" class="file"><acronym title="F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc">F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">23</td></tr>
+</table>
+</td>
+</table><a name="IDYPEIZBQ3MK3LK33OTEJEXACFQBBAWC0V32HN2AJMGJWFTR0OIAVB"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDVJULHIJDHYJUCDEI4KFQYRORDGP11XAKDNJYQVDJHALWDSAGFS4D">Clearance Constraint (Gap=5mil) (All),(All)</a></td>
+<td class="column2">8</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDJARIW3CNQA0HDWYKBKCFVQD0EBB4RO5LKLR1D4IVTMOPEJAL0DHG">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDJZE2HBRUIJZFPFEDM2TYV20AVCWH2UT2I3PMRXKGXCM23FSZWMF">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDRJHCD0HJ43NVJWCJ2FVIMR4AKNV0BZWHIHWU2OHMAZKNSUMOX3HP">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDLVW2ZGZODZC4GHFOXASH3MNTDJR2MB5GKMOURFL3MZIXIAFV3DGM">Width Constraint (Min=5mil) (Max=500mil) (Preferred=10mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDOS3I3FV23QHSCJXWMU10QCPQEHIKCMBSFD240SJZ41P2MJKL1LXF">Routing Topology Rule(Topology=Shortest) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDBJYUKONXS10TGUWXFBXRDYI4EJ5PQFGJGWA40DKZUMTQI2JAJZOO">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=15mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID3GPBQ3ZBLDCGH2KWGKB5YSC55ENBU0FQVHECX1DDXYQMAI2FRQFP">Hole Size Constraint (Min=10mil) (Max=800mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDDY3IEESQICYVMWC1CK2VF43YHVQUN22HDPNBOOW23GHMEE0R5YB">Hole To Hole Clearance (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2CZWZES4VK5DIDOLYKURMHNGZ512ZX2EUZN3QDWLTJJMLAVDGXK">Minimum Solder Mask Sliver (Gap=5mil) (All),(All)</a></td>
+<td class="column2">14</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDWTO4BI050QNRI41NXGRPMLKJMC4JH0U35XSER5E24SNAFLRZ3VHC">Silk To Solder Mask (Clearance=5mil) (IsPad),(All)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDXVRGO0LXWBGVECSRKCQAUFYQWIKAVFKOCCPN1DIUUZCAI5NKQ55C">Silk to Silk (Clearance=5mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID1A4V4IM0VLHNBANXLXQI3TOOZNNOWKFEAQP0EILKGI3TT1EBCPYG">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2HFV5N2TSND2LUN5MTN3GVJTCOWG00ZG2SVCSZJ1BZ1Z1FANNB3B">Matched Lengths(Tolerance=25mil) (InNetClass('mSATARx'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDDRXYFOTVCQZUELOVZYJL0PM0XDRT3UNVHIPA0KHDTISNS53SWJPG">Matched Lengths(Tolerance=5mil) (InNetClass('I210Tx'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID3OLMF15KY22UDKFJICFQM1DTVL04VGPA4QKIJSJKEFMZLVCDBTQE">Matched Lengths(Tolerance=5mil) (InNetClass('I210Rx'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDSHZ5Z54V1KSXFJYLDMJCQ5P21C0WHJYJMIVKBCI52TO42XMUE2WM">Matched Lengths(Tolerance=25mil) (InNetClass('mSATATx'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDGVZFX4EJATMF1SA03WB4BVG1JX4YGZD5ZAIOWB434GXXZIQ3ANG">Matched Lengths(Tolerance=5mil) (InNetClass('PCIERx'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDDBO5L1RRFDPKCKWE3CJLF1S10GN5XLFWXFQS2O0RIVXWQLFOLSF">Matched Lengths(Tolerance=5mil) (InNetClass('PCIETx'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID12VYUO0PAY1MIFYEC5SINAF43FY3GMXPHDEBHJOMCK4AMQSMHXPD">Matched Lengths(Tolerance=25mil) (InNetClass('PCIECLK'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID2HMGIAQ4Y0UOFGGVI3GKSEFMQJY5QK0GBIUI4HMPG1SMN5G4O3LL">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (Disabled)(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">23</td>
+</tr>
+</table><br><a name="IDVJULHIJDHYJUCDEI4KFQYRORDGP11XAKDNJYQVDJHALWDSAGFS4D"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Clearance Constraint (Gap=5mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4784.875mil|Location2.X=4791.125mil|Location1.Y=4086.119mil|Location2.Y=4092.369mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4784.875mil|Location2.X=4791.125mil|Location1.Y=4086.119mil|Location2.Y=4092.369mil|Absolute=True">Clearance Constraint: (2mil &lt; 5mil) Between Pad X1-1(4766mil,4077.244mil) on Top Layer And Region (0 hole(s)) Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4784.875mil|Location2.X=4791.125mil|Location1.Y=4086.119mil|Location2.Y=4092.369mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4784.875mil|Location2.X=4791.125mil|Location1.Y=4086.119mil|Location2.Y=4092.369mil|Absolute=True">Clearance Constraint: (2mil &lt; 5mil) Between Pad X1-1(4766mil,4077.244mil) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4824.875mil|Location2.X=4831.125mil|Location1.Y=4086.119mil|Location2.Y=4092.369mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4824.875mil|Location2.X=4831.125mil|Location1.Y=4086.119mil|Location2.Y=4092.369mil|Absolute=True">Clearance Constraint: (2mil &lt; 5mil) Between Pad X1-2(4850mil,4077.244mil) on Top Layer And Region (0 hole(s)) Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4824.875mil|Location2.X=4831.125mil|Location1.Y=4086.119mil|Location2.Y=4092.369mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4824.875mil|Location2.X=4831.125mil|Location1.Y=4086.119mil|Location2.Y=4092.369mil|Absolute=True">Clearance Constraint: (2mil &lt; 5mil) Between Pad X1-2(4850mil,4077.244mil) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4824.875mil|Location2.X=4831.125mil|Location1.Y=4038.875mil|Location2.Y=4045.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4824.875mil|Location2.X=4831.125mil|Location1.Y=4038.875mil|Location2.Y=4045.125mil|Absolute=True">Clearance Constraint: (2mil &lt; 5mil) Between Pad X1-3(4850mil,4030mil) on Top Layer And Region (0 hole(s)) Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4824.875mil|Location2.X=4831.125mil|Location1.Y=4038.875mil|Location2.Y=4045.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4824.875mil|Location2.X=4831.125mil|Location1.Y=4038.875mil|Location2.Y=4045.125mil|Absolute=True">Clearance Constraint: (2mil &lt; 5mil) Between Pad X1-3(4850mil,4030mil) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4784.875mil|Location2.X=4791.125mil|Location1.Y=4038.875mil|Location2.Y=4045.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4784.875mil|Location2.X=4791.125mil|Location1.Y=4038.875mil|Location2.Y=4045.125mil|Absolute=True">Clearance Constraint: (2mil &lt; 5mil) Between Pad X1-4(4766mil,4030mil) on Top Layer And Region (0 hole(s)) Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4784.875mil|Location2.X=4791.125mil|Location1.Y=4038.875mil|Location2.Y=4045.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4784.875mil|Location2.X=4791.125mil|Location1.Y=4038.875mil|Location2.Y=4045.125mil|Absolute=True">Clearance Constraint: (2mil &lt; 5mil) Between Pad X1-4(4766mil,4030mil) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID2CZWZES4VK5DIDOLYKURMHNGZ512ZX2EUZN3QDWLTJJMLAVDGXK"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=5mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8239.332mil|Location2.X=8245.582mil|Location1.Y=3541.875mil|Location2.Y=3548.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8239.332mil|Location2.X=8245.582mil|Location1.Y=3541.875mil|Location2.Y=3548.125mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (3.81mil &lt; 5mil) Between Pad C71-1(8275mil,3577.48mil) on Top Layer And Pad C71-2(8275mil,3512.52mil) on Top Layer [Top Solder] Mask Sliver [3.81mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7704.418mil|Location2.X=7710.668mil|Location1.Y=2131.875mil|Location2.Y=2138.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7704.418mil|Location2.X=7710.668mil|Location1.Y=2131.875mil|Location2.Y=2138.125mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (3.81mil &lt; 5mil) Between Pad C74-1(7675mil,2102.52mil) on Top Layer And Pad C74-2(7675mil,2167.48mil) on Top Layer [Top Solder] Mask Sliver [3.81mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6834.418mil|Location2.X=6840.668mil|Location1.Y=4816.875mil|Location2.Y=4823.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6834.418mil|Location2.X=6840.668mil|Location1.Y=4816.875mil|Location2.Y=4823.125mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (3.81mil &lt; 5mil) Between Pad C99-1(6805mil,4787.52mil) on Top Layer And Pad C99-2(6805mil,4852.48mil) on Top Layer [Top Solder] Mask Sliver [3.81mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3798.963mil|Location2.X=3805.213mil|Location1.Y=4346.331mil|Location2.Y=4352.581mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3798.963mil|Location2.X=3805.213mil|Location1.Y=4346.331mil|Location2.Y=4352.581mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (2.432mil &lt; 5mil) Between Pad U1-12(3830mil,4355.316mil) on Top Layer And Via (3778mil,4342mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [2.432mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3799.493mil|Location2.X=3805.743mil|Location1.Y=4338.027mil|Location2.Y=4344.277mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3799.493mil|Location2.X=3805.743mil|Location1.Y=4338.027mil|Location2.Y=4344.277mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.265mil &lt; 5mil) Between Pad U1-13(3830mil,4335.63mil) on Top Layer And Via (3778mil,4342mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [1.265mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3948.503mil|Location2.X=3956.265mil|Location1.Y=4146.389mil|Location2.Y=4153.698mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3948.503mil|Location2.X=3956.265mil|Location1.Y=4146.389mil|Location2.Y=4153.698mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.015mil &lt; 5mil) Between Pad U1-23(3945.112mil,4122.092mil) on Top Layer And Via (3964.798mil,4173mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [4.015mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3961.673mil|Location2.X=3967.923mil|Location1.Y=4145.796mil|Location2.Y=4152.046mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3961.673mil|Location2.X=3967.923mil|Location1.Y=4145.796mil|Location2.Y=4152.046mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.158mil &lt; 5mil) Between Pad U1-24(3964.798mil,4122.092mil) on Top Layer And Via (3964.798mil,4173mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.158mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3974.841mil|Location2.X=3982.557mil|Location1.Y=4147.448mil|Location2.Y=4154.834mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3974.841mil|Location2.X=3982.557mil|Location1.Y=4147.448mil|Location2.Y=4154.834mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (4.014mil &lt; 5mil) Between Pad U1-25(3984.482mil,4122.092mil) on Top Layer And Via (3964.798mil,4173mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [4.014mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3798.438mil|Location2.X=3805.825mil|Location1.Y=4521.395mil|Location2.Y=4529.11mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3798.438mil|Location2.X=3805.825mil|Location1.Y=4521.395mil|Location2.Y=4529.11mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (3.918mil &lt; 5mil) Between Pad U1-3(3830mil,4532.48mil) on Top Layer And Via (3779.204mil,4512.796mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [3.918mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3855.445mil|Location2.X=3861.695mil|Location1.Y=4523.522mil|Location2.Y=4529.772mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3855.445mil|Location2.X=3861.695mil|Location1.Y=4523.522mil|Location2.Y=4529.772mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (3.701mil &lt; 5mil) Between Pad U1-3(3830mil,4532.48mil) on Top Layer And Via (3884mil,4522mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [3.701mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3800.102mil|Location2.X=3806.352mil|Location1.Y=4509.671mil|Location2.Y=4515.921mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3800.102mil|Location2.X=3806.352mil|Location1.Y=4509.671mil|Location2.Y=4515.921mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.046mil &lt; 5mil) Between Pad U1-4(3830mil,4512.796mil) on Top Layer And Via (3779.204mil,4512.796mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.046mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3855.359mil|Location2.X=3861.609mil|Location1.Y=4515.407mil|Location2.Y=4521.657mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3855.359mil|Location2.X=3861.609mil|Location1.Y=4515.407mil|Location2.Y=4521.657mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (3.501mil &lt; 5mil) Between Pad U1-4(3830mil,4512.796mil) on Top Layer And Via (3884mil,4522mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [3.501mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3798.437mil|Location2.X=3805.747mil|Location1.Y=4496.48mil|Location2.Y=4504.241mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3798.437mil|Location2.X=3805.747mil|Location1.Y=4496.48mil|Location2.Y=4504.241mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (3.919mil &lt; 5mil) Between Pad U1-5(3830mil,4493.11mil) on Top Layer And Via (3779.204mil,4512.796mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [3.919mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4324.75mil|Location2.X=4331mil|Location1.Y=4548.875mil|Location2.Y=4555.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4324.75mil|Location2.X=4331mil|Location1.Y=4548.875mil|Location2.Y=4555.125mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.75mil &lt; 5mil) Between Pad U1-59(4355.5mil,4552.166mil) on Top Layer And Via (4303mil,4552mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [1.75mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDWTO4BI050QNRI41NXGRPMLKJMC4JH0U35XSER5E24SNAFLRZ3VHC"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=5mil) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3798.668mil|Location2.X=3806.001mil|Location1.Y=4575.157mil|Location2.Y=4582.886mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\ALTIUM\WINTER BREAK\Copy of WINTER_BREAK_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3798.668mil|Location2.X=3806.001mil|Location1.Y=4575.157mil|Location2.Y=4582.886mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (3.46mil &lt; 5mil) Between Pad U1-1(3830mil,4571.85mil) on Top Layer And Text "*" (3765.75mil,4571.693mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [3.46mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
