@@ -2,7 +2,7 @@ Weekly TA Updates
 
 Jan 16
 Mackenzie: 
-  Since 403 - 
+  Since 403 - went over original design
   Next week - redesign and order pcb - organize and order new parts
 
 Andrew:
@@ -17,10 +17,10 @@ Ryan:
   Since 403 - Communicated with Drew about necessary components on microcontroller PCB
   Next week - Fix frequency of PWM waves to range from 10Hz to 60Hz, fix voltage to be 120V, figure out how to demonstrate the output onto a load resistor
 
-Jan 23
+Jan 2 
 Mackenzie: 
-  Last week - 
-  Next week -
+  Last week - redesigned pcb -  discussion about physical orientation for integration - add validations test
+  Next week - route pcb
 
 Andrew:
   Last week - began work on PCB redesign
@@ -36,8 +36,8 @@ Ryan:
 
 Jan 30
 Mackenzie: 
-  Last week - 
-  Next week -
+  Last week - routed pcb completely 
+  Next week - order pcb and parts
 
 Andrew:
   Last week - Ordered PCB, completed status update 1 presentation.
@@ -53,8 +53,8 @@ Ryan:
 
 Jan 6
 Mackenzie: 
-  Last week - 
-  Next week -
+  Last week - ordered pcb - picked out parts 
+  Next week - populate board 
 
 Andrew:
   Last week - 
