@@ -17,7 +17,7 @@ Ryan:
   Since 403 - Communicated with Drew about necessary components on microcontroller PCB
   Next week - Fix frequency of PWM waves to range from 10Hz to 60Hz, fix voltage to be 120V, figure out how to demonstrate the output onto a load resistor
 
-Jan 2 
+Jan 23
 Mackenzie: 
   Last week - redesigned pcb -  discussion about physical orientation for integration - add validations test
   Next week - route pcb
@@ -51,7 +51,7 @@ Ryan:
   Last week - 
   Next week -
 
-Jan 6
+Feb 6
 Mackenzie: 
   Last week - ordered pcb - picked out parts 
   Next week - populate board 
@@ -63,6 +63,23 @@ Andrew:
 Aidan: 
   Last week - completed PCBv1 order; worked on order 4
   Next week - complete order 4; complete status update 2 presentation; work on PCBv1 assembly; work on Auxiliary Power Integration
+
+Ryan:
+  Last week - 
+  Next week -
+
+Feb 13
+Mackenzie: 
+  Last week - 
+  Next week - 
+
+Andrew:
+  Last week - 
+  Next week - 
+
+Aidan: 
+  Last week - completed order 4; completed status update 2 presentation; worked on PCBv1 assembly; worked on Auxiliary Power Integration
+  Next week - complete PCBv1 assembly; complete Auxiliary Power Integration; work on PWM Control Integration; work on Relay Control Integration
 
 Ryan:
   Last week - 
