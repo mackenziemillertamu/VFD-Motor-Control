@@ -19,68 +19,68 @@ Ryan:
 
 Jan 23
 Mackenzie: 
-  Last week - redesigned pcb - discussion about physical orientation for integration - add validations test
+  This week - redesigned pcb - discussion about physical orientation for integration - add validations test
   Next week - route pcb
 
 Andrew:
-  Last week - began work on PCB redesign
+  This week - began work on PCB redesign
   Next week - complete PCB and order
 
 Aidan: 
-  Last week - 403 to 404 transition (organize teams files, github files); worked on status update 1 presentation; system design review 1
+  This week - 403 to 404 transition (organize teams files, github files); worked on status update 1 presentation; system design review 1
   Next week - complete order 4; complete status update 1 presentation; work on validation plan; work on FSR v1; work on PCB v1
 
 Ryan:
-  Last week - Found temporary frequency fix. Am now able to scale and calibrate the frequencies based on the number I assign a variable.
+  This week - Found temporary frequency fix. Am now able to scale and calibrate the frequencies based on the number I assign a variable.
   Next week - Figure out how to view the PWM sine waves on oscilloscope.
 
 Jan 30
 Mackenzie: 
-  Last week - routed pcb completely 
+  This week - routed pcb completely 
   Next week - order pcb and parts
 
 Andrew:
-  Last week - Ordered PCB, completed status update 1 presentation.
+  This week - Ordered PCB, completed status update 1 presentation.
   Next week - 
 
 Aidan: 
-  Last week - completed status update 1 presentation; completed full design review; worked on PCB v1
+  This week - completed status update 1 presentation; completed full design review; worked on PCB v1
   Next week - complete PCBv1 order; complete order 4; work on Auxiliary Power Integration; work on validation plan; work on FSR v1
 
 Ryan:
-  Last week - Partially successful integration with Optoelectronics subsystem. 
+  This week - Partially successful integration with Optoelectronics subsystem. 
   Next week - Produce a 3.3V voltage to power Optoelectronics subsystem.
 
 Feb 6
 Mackenzie: 
-  Last week - ordered pcb - picked out parts 
+  This week - ordered pcb - picked out parts 
   Next week - populate board 
 
 Andrew:
-  Last week - 
+  This week - 
   Next week - 
 
 Aidan: 
-  Last week - completed PCBv1 order; worked on order 4
+  This week - completed PCBv1 order; worked on order 4
   Next week - complete order 4; complete status update 2 presentation; work on PCBv1 assembly; work on Auxiliary Power Integration
 
 Ryan:
-  Last week - Successful
+  This week - Successful
   Next week -
 
 Feb 13
 Mackenzie: 
-  Last week - 
+  This week - 
   Next week - 
 
 Andrew:
-  Last week - 
+  This week - 
   Next week - 
 
 Aidan: 
-  Last week - completed order 4; completed status update 2 presentation; worked on PCBv1 assembly; worked on Auxiliary Power Integration
+  This week - completed order 4; completed status update 2 presentation; worked on PCBv1 assembly; worked on Auxiliary Power Integration
   Next week - complete PCBv1 assembly; complete Auxiliary Power Integration; work on PWM Control Integration; work on Relay Control Integration
 
 Ryan:
-  Last week - Figured out how to produce sine waves of PWM. 
-  Next week - Implement Start/stop button. Finish integration with Optoelectronics
+  This week - Figured out how to produce/visualize sine waves of PWM waves on the oscilloscope. Integrated with optoelectronics subsystem by sending all 6 PWM signals through their PCB and displaying the same output on their end.
+  Next week - Implement start/stop button that starts and shuts off the PWM wave production. Integrate with the microcontroller and power subsystems' PCBs once they are done soldering.
