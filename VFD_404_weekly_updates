@@ -32,7 +32,7 @@ Aidan:
 
 Ryan:
   This week - Found temporary frequency fix. Am now able to scale and calibrate the frequencies based on the number I assign a variable.
-  Next week - Figure out how to view the PWM sine waves on oscilloscope.
+  Next week - Figure out how to view the PWM sine waves on oscilloscope. Attempt integration with Optoelectronics.
 
 Jan 30
 Mackenzie: 
@@ -48,8 +48,8 @@ Aidan:
   Next week - complete PCBv1 order; complete order 4; work on Auxiliary Power Integration; work on validation plan; work on FSR v1
 
 Ryan:
-  This week - Partially successful integration with Optoelectronics subsystem. 
-  Next week - Produce a 3.3V voltage to power Optoelectronics subsystem.
+  This week - Partially successful integration with Optoelectronics subsystem. Found out how to produce 3.3V to power optoelectronics PCB.
+  Next week - Figure out how to produce/visualize sine waves of PWM waves on oscilloscope. Find out how to power Dev board without laptop.
 
 Feb 6
 Mackenzie: 
@@ -65,8 +65,8 @@ Aidan:
   Next week - complete order 4; complete status update 2 presentation; work on PCBv1 assembly; work on Auxiliary Power Integration
 
 Ryan:
-  This week - Successful
-  Next week -
+  This week - Figured out how to produce/visualize sine waves of PWM waves on oscilloscope. Found out how to power Dev board with 5V supply.
+  Next week - Once the new optoelectronics PCB arrives, make another attempt at integration.
 
 Feb 13
 Mackenzie: 
@@ -82,5 +82,5 @@ Aidan:
   Next week - complete PCBv1 assembly; complete Auxiliary Power Integration; work on PWM Control Integration; work on Relay Control Integration
 
 Ryan:
-  This week - Figured out how to produce/visualize sine waves of PWM waves on the oscilloscope. Integrated with optoelectronics subsystem by sending all 6 PWM signals through their PCB and displaying the same output on their end.
+  This week - Integrated with optoelectronics subsystem by sending all 6 PWM signals through their PCB and displaying the same output on their end.
   Next week - Implement start/stop button that starts and shuts off the PWM wave production. Integrate with the microcontroller and power subsystems' PCBs once they are done soldering.
