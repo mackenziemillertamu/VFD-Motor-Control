@@ -1,0 +1,26 @@
+Remove Pin=J2-2 From Net=~1
+Remove Pin=J2-3 From Net=~2
+Remove Pin=J3-1 From Net=U_VS(U)
+Remove Pin=J3-2 From Net=V_VS(V)
+Remove Pin=J3-3 From Net=W_VS(W)
+Remove Pin=J4-1 From Net=P_VIN1
+Remove Pin=J4-2 From Net=VIN2
+Remove Pin=J4-3 From Net=VFO_VIN3
+Remove Pin=J5-1 From Net=OUT0
+Remove Pin=J5-2 From Net=OUT1
+Remove Pin=J5-3 From Net=OUT2
+Remove Pin=J5-4 From Net=OUT3
+Remove Pin=J5-5 From Net=OUT4
+Remove Pin=J5-6 From Net=OUT5
+Remove Pin=J5-7 From Net=OUT6
+Change Component Footprint: Designator=J3 Old Footprint=CUI_TB006 -508-04BE New Footprint=CONN3_TB006-508_CUD
+Change Component Footprint: Designator=J5 Old Footprint=CUI_TB006 -508-08BE New Footprint=CUI_TB006 -508-04BE
+Change Component Comment: Designator=J3 Old Comment=TB006_-508-04BE New Comment=TB006-508-03BE
+Change Component Comment: Designator=J5 Old Comment=TB006_-508-08BE New Comment=TB006_-508-04BE
+Add Pin To Net: Pin=J4-1 Old Net=P_VIN1 New Net=U_VS(U)
+Add Pin To Net: Pin=J4-2 Old Net=VIN2 New Net=V_VS(V)
+Add Pin To Net: Pin=J4-3 Old Net=VFO_VIN3 New Net=W_VS(W)
+Add Pin To Net: Pin=J5-1 Old Net=OUT0 New Net=P_VIN1
+Add Pin To Net: Pin=J5-2 Old Net=OUT1 New Net=VIN2
+Add Pin To Net: Pin=J5-3 Old Net=OUT2 New Net=VFO_VIN3
+Change Pin Designator/Name:  Old Designator=J5-8 Old Name=8 New Designator =4 New Name=4
