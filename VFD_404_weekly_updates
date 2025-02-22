@@ -75,7 +75,7 @@ Mackenzie:
 
 Andrew:
   This week - Began assembling PCB with parts I already had. Completed status update 2 
-  Next week -  Finish assembly and begin testing.
+  Next week - Finish assembly and begin testing.
 
 Aidan: 
   This week - completed order 4; completed status update 2 presentation; worked on PCBv1 assembly; worked on Auxiliary Power Integration
@@ -84,3 +84,20 @@ Aidan:
 Ryan:
   This week - Integrated with optoelectronics subsystem by sending all 6 PWM signals through their PCB and displaying the same output on their end.
   Next week - Implement start/stop button that starts and shuts off the PWM wave production. Integrate with the microcontroller and power subsystems' PCBs once they are done soldering.
+
+Feb 20
+Mackenzie: 
+  This week - 
+  Next week - 
+
+Andrew:
+  This week - 
+  Next week - 
+
+Aidan: 
+  This week - completed PCBv1 assembly; worked on Auxiliary Power Integration; worked on PWM Control Integration;
+  Next week - complete Auxiliary Power Integration; complete on PWM Control Integration; work on Relay Control Integration
+
+Ryan:
+  This week - 
+  Next week - 
