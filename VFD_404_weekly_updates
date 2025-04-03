@@ -104,8 +104,8 @@ Ryan:
 
 Feb 27
 Mackenzie: 
-  This week - 
-  Next week -
+  This week - continued testing auxiliary power integration, pwm integration is good with devboard - need to replace with mcu
+  Next week - try pwm control with power control - auxiliary power 
 
 Andrew:
   This week - 
@@ -121,8 +121,8 @@ Ryan:
 
 Mar 6
 Mackenzie: 
-  This week - 
-  Next week -
+  This week - try to finish pwm control integration, relay control integration works - did pwm with dev and power control and it was not expected
+  Next week - figure out what is wrong with my schematic because there is a huge voltage drop when plugging the 15V and pgnd into my board
 
 Andrew:
   This week - 
@@ -141,8 +141,8 @@ Spring Break
 
 Mar 20
 Mackenzie: 
-  This week - 
-  Next week -
+  This week - blitz - identified power feedback issue - vcc and gnd on opamps were mixed up in my schematic 
+  Next week - assemble and route new board
 
 Andrew:
   This week - 
@@ -158,8 +158,8 @@ Ryan:
 
 Mar 27
 Mackenzie: 
-  This week - 
-  Next week -
+  This week - routed and designed new board
+  Next week -assemble and test new board for pwm control and power feedback
 
 Andrew:
   This week - 
@@ -175,8 +175,8 @@ Ryan:
 
 Apr 3
 Mackenzie: 
-  This week - 
-  Next week -
+  This week - completed auxiliary power - assembled new pcb, but something went wrong so i went back to old pcb and cut traces and put blue wire
+  Next week - full system integraton!! pwm control is pretty much completed, relay control will be completed when my new parts arrive
 
 Andrew:
   This week - 
