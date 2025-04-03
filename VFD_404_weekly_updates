@@ -99,8 +99,8 @@ Aidan:
   Next week - complete Auxiliary Power Integration; complete on PWM Control Integration; work on Relay Control Integration
 
 Ryan:
-  This week - 
-  Next week - 
+  This week - Attempted to flash code onto Drew's MCU - tried to find the potential problem with PICKIT
+  Next week - Fix problem with PICKIT, implement proper relay signal for start/stop button
 
 Feb 27
 Mackenzie: 
@@ -116,8 +116,8 @@ Aidan:
   Next week - complete Auxiliary Power Integration; complete PWM Control Integration; complete Relay Control Integration
 
 Ryan:
-  This week - 
-  Next week - 
+  This week - Implemented Relay signal for start/stop button instead of PWM start/stop functionality; finished validating PWM control integration with optoelectronics
+  Next week - Add Power subsystem to PWM control integration; fix problem with MCU and PICKIT; Test relay control integration
 
 Mar 6
 Mackenzie: 
@@ -133,8 +133,8 @@ Aidan:
   Next week - complete Auxiliary Power Integration; complete PWM Control Integration; complete Relay Control Integration
 
 Ryan:
-  This week - 
-  Next week - 
+  This week - Excused absence. Power and Optoelectronics attempted to use programmed dev board but it was in the wrong mode while I was gone.
+  Next week - Set dev board to correct power mode and continue PWM control integration efforts; fix problem with PICKIT to flash code onto MCU
 
 Mar 13
 Spring Break
@@ -153,8 +153,8 @@ Aidan:
   Next week - complete Auxiliary Power Integration; complete PWM Control Integration; complete Relay Control Integration; work on power feedback integration
 
 Ryan:
-  This week - 
-  Next week -
+  This week - Finally found the problem with the MCU/PICKIT connection, successfully flashed code onto MCU; successful test of relay control integration with Dev board
+  Next week - Fix problem with potentiometer on MCU; Program LEDs on MCU; help optoelectronics with desoldering to save opamps; look at PWM frequencies (might be too slow)
 
 Mar 27
 Mackenzie: 
@@ -170,8 +170,8 @@ Aidan:
   Next week - complete Auxiliary Power Integration; complete PWM Control Integration; complete Relay Control Integration; work on power feedback integration; complete update presentation 5
 
 Ryan:
-  This week - 
-  Next week -
+  This week - Found problem with potentiometer-need new MCU PCB; programmed LEDs and fixed problem with their orientation; helped optoelectronics desolder opamps, fixed PWM frequencies
+  Next week - Flash code onto new MCU PCB and run full system testing; Help teammates with solder/desoldering
 
 Apr 3
 Mackenzie: 
@@ -187,5 +187,5 @@ Aidan:
   Next week - complete PWM Control Integration; complete Relay Control Integration; work on power feedback integration
 
 Ryan:
-  This week - 
-  Next week -
+  This week - Helped teammates with soldering/desoldering; first successful full system test of PWM control integration; Tested UART to USB cable
+  Next week - Test relay control integration; write feedback code to visualize the three feedback signals with print statements in the UART console; test with motor!
