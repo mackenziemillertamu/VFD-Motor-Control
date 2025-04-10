@@ -91,8 +91,8 @@ Mackenzie:
   Next week - continue to test auxiliary power with power board - maybe start housing design
 
 Andrew:
-  This week - 
-  Next week - 
+  This week - Finished assembly and tried flashing code onto MCU with Pickit4.
+  Next week - Test buck converter and flash code.
 
 Aidan: 
   This week - completed PCBv1 assembly; worked on Auxiliary Power Integration; worked on PWM Control Integration
@@ -108,8 +108,8 @@ Mackenzie:
   Next week - try pwm control with power control - auxiliary power 
 
 Andrew:
-  This week - 
-  Next week - 
+  This week - Tested the buck converter and ensured MCU was powered correctly. Tried troubleshooting Pickit4.
+  Next week - Find a working Pickit for integration.
 
 Aidan: 
   This week - completed Auxiliary Power integration with microcontroller, worked on Auxiliary Power integration with optoelectronics; worked on PWM Control integration with optoelectronics, firmware
@@ -125,8 +125,8 @@ Mackenzie:
   Next week - figure out what is wrong with my schematic because there is a huge voltage drop when plugging the 15V and pgnd into my board
 
 Andrew:
-  This week - 
-  Next week - 
+  This week - Found a Pickit5 in WEB after trying to troubleshoot the Pickit4. 
+  Next week - Use Ryans code and flash it onto MCU, then begin integrating with other subsytems.
 
 Aidan: 
   This week - worked on Auxiliary Power Integration; worked on PWM Control Integration; worked on Relay Control Integration
@@ -145,8 +145,8 @@ Mackenzie:
   Next week - assemble and route new board
 
 Andrew:
-  This week - 
-  Next week - 
+  This week - Flashed code using the new Pickit5, worked on auxiliary power integration with power subsystem, worked on PWM integration with optoelectronics board
+  Next week - Fix potentiometer problem on MCU, order new board
 
 Aidan: 
   This week - worked on Auxiliary Power Integration; worked on PWM Control Integration; worked on Relay Control Integration; worked on power feedback integration; completed status update presentation 4
@@ -162,8 +162,8 @@ Mackenzie:
   Next week -assemble and test new board for pwm control and power feedback
 
 Andrew:
-  This week - 
-  Next week - 
+  This week - Received final board, fixed potentiometer problem, ensured PWMs were functioning properly
+  Next week - Integrate with full system
 
 Aidan: 
   This week - worked on Auxiliary Power Integration; worked on power feedback integration; worked on status update presentation 5; worked on sourcing ribbon cables; tested rectifier with hv (120 vac)
@@ -179,8 +179,8 @@ Mackenzie:
   Next week - full system integraton!! pwm control is pretty much completed, relay control will be completed when my new parts arrive
 
 Andrew:
-  This week - 
-  Next week - 
+  This week - Completed auxiliary power, made sure relay and on off button toggled correctly
+  Next week - Complete integration with the full system
 
 Aidan: 
   This week - completed Auxiliary Power Integration; completed on status update presentation 5; worked on power feedback integration; worked on sourcing ribbon cables
