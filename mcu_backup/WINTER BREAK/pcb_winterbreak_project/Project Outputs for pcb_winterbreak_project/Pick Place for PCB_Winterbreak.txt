@@ -1,0 +1,63 @@
+Altium Designer Pick and Place Locations
+D:\ALTIUM\WINTER BREAK\pcb_winterbreak_project\Project Outputs for pcb_winterbreak_project\Pick Place for PCB_Winterbreak.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       13/02/25
+Time:       16:27
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mil
+
+Designator        Comment               Layer    Footprint                   Center-X(mil) Center-Y(mil) Rotation Description                                                                                                              
+X1                KC2520Z8.00000C1KX00  TopLayer OSC_0C1KX00_AVX             6635.000      4150.000      0        "No Description Available"                                                                                               
+U4                LM2595S-3.3/NOPB      TopLayer KTT0005B_N                  6194.291      5895.000      0        "SIMPLE SWITCHER® Power Converter 150 KHz 1A Step-Down Voltage Regulator, 5-pin TO-263, Pb-Free"                         
+U2                IRM-15-15             TopLayer IRM-15_MWU                  2055.827      6624.449      180      "No Description Available"                                                                                               
+U1                DSPIC33CK256MP508-IPT TopLayer TQFP80_PT_MCH               4165.000      4795.000      0        "No Description Available"                                                                                               
+TVS1              SZ1SMB36CAT3G         TopLayer SMB-2_4P60X3P95_ONS         5320.000      7110.000      180      "No Description Available"                                                                                               
+SW4               430182043816          TopLayer 430182043816                3460.000      5635.000      0        "Switch Tactile N.O. SPST Round Button Gull Wing 0.05A 12VDC 1000000Cycles 1.57N SMD Reel"                               
+SW1               430182043816          TopLayer 430182043816                4885.000      4705.000      0        "Switch Tactile N.O. SPST Round Button Gull Wing 0.05A 12VDC 1000000Cycles 1.57N SMD Reel"                               
+R_MCLR            ESR03EZPJ103          TopLayer FP-ESR03-IPC_C              3325.000      5330.000      180      "10kO ±5% 0.25W 0603 Anti-Surge Chip Resistor AEC-Q200"                                                                  
+R52               RR0816Q-750-D         TopLayer FP-RR0816-IPC_B             6635.000      3960.000      0        "75O ±0.5% 0.0625W 1/16W Chip Resistor 0603 (1608 Metric) Thin Film"                                                     
+R41               RR0816Q-750-D         TopLayer FP-RR0816-IPC_B             3070.001      5335.000      180      "75O ±0.5% 0.0625W 1/16W Chip Resistor 0603 (1608 Metric) Thin Film"                                                     
+R40               RR0816Q-750-D         TopLayer FP-RR0816-IPC_B             3070.000      5185.000      180      "75O ±0.5% 0.0625W 1/16W Chip Resistor 0603 (1608 Metric) Thin Film"                                                     
+R39               RR0816Q-750-D         TopLayer FP-RR0816-IPC_B             3070.001      5040.000      180      "75O ±0.5% 0.0625W 1/16W Chip Resistor 0603 (1608 Metric) Thin Film"                                                     
+R38               RR0816Q-750-D         TopLayer FP-RR0816-IPC_B             3070.001      4605.000      180      "75O ±0.5% 0.0625W 1/16W Chip Resistor 0603 (1608 Metric) Thin Film"                                                     
+R37               RR0816Q-750-D         TopLayer FP-RR0816-IPC_B             3070.000      4890.000      180      "75O ±0.5% 0.0625W 1/16W Chip Resistor 0603 (1608 Metric) Thin Film"                                                     
+R36               RR0816Q-750-D         TopLayer FP-RR0816-IPC_B             3068.569      4745.000      180      "75O ±0.5% 0.0625W 1/16W Chip Resistor 0603 (1608 Metric) Thin Film"                                                     
+R19               ERJ3EKF1002V          TopLayer RESC1609X55X30LL15T15       3320.000      4805.000      0        "Chip Resistor, 10 KOhm, +/- 1%, 0.1 W, -55 to 155 degC, 0603 (1608 Metric), RoHS, Tape and Reel"                        
+R18               ERJ-3EKF1000V         TopLayer RESC1608X55X30LL15T15       3315.000      5045.000      0        ""                                                                                                                       
+R17_Potentiometer P090S-14T20BR10K      TopLayer RES-POT-3                   5750.000      4072.795      180      "9 mm Rotary Potentiometer, Insulated Shaft, Conductive Plastic Element, 10 KOhm, -20 to 70 degC, 3-Pin THD, RoHS, Tray" 
+R16               RR0816P-331-D         TopLayer FP-RR0816-IPC_C             6180.000      4155.000      0        "330O ±0.5% 0.0625W 1/16W Chip Resistor 0603 (1608 Metric) Thin Film"                                                    
+R9                ERJ3EKF1002V          TopLayer RESC1609X55X30LL15T15       3735.591      5335.000      0        "Chip Resistor, 10 KOhm, +/- 1%, 0.1 W, -55 to 155 degC, 0603 (1608 Metric), RoHS, Tape and Reel"                        
+R4                ERJ-3EKF1001V         TopLayer RESC1608X55X30LL15T15       4760.000      4995.000      0        ""                                                                                                                       
+R3                ERJ3EKF1002V          TopLayer RESC1609X55X30LL15T15       4754.410      5110.000      0        "Chip Resistor, 10 KOhm, +/- 1%, 0.1 W, -55 to 155 degC, 0603 (1608 Metric), RoHS, Tape and Reel"                        
+R2                RN73A1J470RFTD        TopLayer FP-RN731J-MFG               3070.000      4450.000      0        42                                                                                                                       
+R1                RN73A1J470RFTD        TopLayer FP-RN731J-MFG               3070.000      4295.000      0        42                                                                                                                       
+Lout              NR6028T680M           TopLayer FP-NR6028-MFG               6620.000      6435.000      0        "SMD Power Inductors 68uH ±20% 0.76A 0.546O"                                                                             
+J7                TB006-508-03BE        TopLayer CONN3_TB006-508_CUD         445.000       6805.000      90       "No Description Available"                                                                                               
+J6                PREC003SAAN-RC        TopLayer FP-PREC003SAAN-RC-MFG       450.000       4250.000      90       "PREC003SAAN-RC Conn Header Vert 3POS 2.54MM"                                                                            
+J2                SFH11-PBPC-D10-ST-BK  TopLayer FP-SFH11-PBPC-D10-ST-BK-MFG 490.000       5420.000      270      "CONN HDR 20POS 0.1 GOLD PCB"                                                                                            
+J1                SFH11-PBPC-D10-ST-BK  TopLayer FP-SFH11-PBPC-D10-ST-BK-MFG 7990.000      6605.000      270      "CONN HDR 20POS 0.1 GOLD PCB"                                                                                            
+ICD1              B5B-PH-K-S(LF)(SN)    TopLayer FP-B5B-PH-K-S_LF_SN-MFG     440.000       3641.260      90       "CONN HEADER VERT 5POS 2MM"                                                                                              
+Diode1            1N5822                TopLayer FP-DO-201AD-MFG             6005.000      6775.000      90       "DIODE SCHOTTKY 40V 3A DO201AD"                                                                                          
+D2                LTST-C190KGKT         TopLayer FP-LTST-C190KGKT-MFG        3335.000      4450.000      0        "LED GREEN CLEAR CHIP SMD"                                                                                               
+D1                LTST-C190KGKT         TopLayer FP-LTST-C190KGKT-MFG        3335.000      4295.000      0        "LED GREEN CLEAR CHIP SMD"                                                                                               
+C_MCLR            GRM155R71C104KA88D    TopLayer FP-GRM15-MFG                3310.748      5205.000      0        "CAP CER 0.1UF 16V X7R 0402"                                                                                             
+C99               08055C104KAZ2A        TopLayer CAPC2013X94X50NL20T25       3587.480      7250.000      180      ""                                                                                                                       
+C98               TAJE476K035RNJ        TopLayer FP-TAJE-MFG                 3635.000      7055.000      180      "47uF 35V  ±10% 900mO 2917  SMD Tantalum Capacitor"                                                                      
+C97               EEHAZS1H221B          TopLayer FP-EEHA-G16-MFG             3640.000      6690.000      180      "Conductive Polymer Hybrid Aluminum Electrolytic Capacitors 220uF ±20% 50V RADIAL TH 10x15.7mm"                          
+C96               EEHAZS1H221B          TopLayer FP-EEHA-G16-MFG             3645.000      6225.000      180      "Conductive Polymer Hybrid Aluminum Electrolytic Capacitors 220uF ±20% 50V RADIAL TH 10x15.7mm"                          
+C74               08055C104KAZ2A        TopLayer CAPC2013X94X50NL20T25       7170.000      6275.000      180      ""                                                                                                                       
+C73               TAJE476K035RNJ        TopLayer FP-TAJE-MFG                 7170.000      6605.000      180      "47uF 35V  ±10% 900mO 2917  SMD Tantalum Capacitor"                                                                      
+C72               EEHAZS1H221B          TopLayer FP-EEHA-G16-MFG             7155.000      7065.000      180      "Conductive Polymer Hybrid Aluminum Electrolytic Capacitors 220uF ±20% 50V RADIAL TH 10x15.7mm"                          
+C71               08055C104KAZ2A        TopLayer CAPC2013X94X50NL20T25       5357.480      5555.000      180      ""                                                                                                                       
+C70               TAJE476K035RNJ        TopLayer FP-TAJE-MFG                 5355.000      5845.000      180      "47uF 35V  ±10% 900mO 2917  SMD Tantalum Capacitor"                                                                      
+C69               EEHAZS1H221B          TopLayer FP-EEHA-G16-MFG             5336.575      6245.000      180      "Conductive Polymer Hybrid Aluminum Electrolytic Capacitors 220uF ±20% 50V RADIAL TH 10x15.7mm"                          
+C68               EEHAZS1H221B          TopLayer FP-EEHA-G16-MFG             5325.000      6720.000      180      "Conductive Polymer Hybrid Aluminum Electrolytic Capacitors 220uF ±20% 50V RADIAL TH 10x15.7mm"                          
+C19               GRM155R71C104KA88D    TopLayer FP-GRM15-MFG                3310.000      4680.000      0        "CAP CER 0.1UF 16V X7R 0402"                                                                                             
+C18               GRM155R71C104KA88D    TopLayer FP-GRM15-MFG                3310.748      4925.000      0        "CAP CER 0.1UF 16V X7R 0402"                                                                                             
+C5                CC0603KRX7R9BB471     TopLayer FP-CC0603-DA-MFG            3590.000      5335.000      0        "CAP CER 470PF 50V X7R 0603"                                                                                             
+C2                GRM155R71C104KA88D    TopLayer FP-GRM15-MFG                6165.000      4005.000      0        "CAP CER 0.1UF 16V X7R 0402"                                                                                             
+C1                GRM155R71C104KA88D    TopLayer FP-GRM15-MFG                4740.000      5235.000      180      "CAP CER 0.1UF 16V X7R 0402"                                                                                             

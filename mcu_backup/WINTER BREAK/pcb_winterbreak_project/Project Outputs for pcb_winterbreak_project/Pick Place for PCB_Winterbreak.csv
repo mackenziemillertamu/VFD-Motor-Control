@@ -1,0 +1,63 @@
+Altium Designer Pick and Place Locations
+D:\ALTIUM\WINTER BREAK\pcb_winterbreak_project\Project Outputs for pcb_winterbreak_project\Pick Place for PCB_Winterbreak.csv
+
+========================================================================================================================
+File Design Information:
+
+Date:       13/02/25
+Time:       16:30
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mil
+
+"Designator","Comment","Layer","Footprint","Center-X(mil)","Center-Y(mil)","Rotation","Description"
+"X1","KC2520Z8.00000C1KX00","TopLayer","OSC_0C1KX00_AVX","6635.000mil","4150.000mil","0","No Description Available"
+"U4","LM2595S-3.3/NOPB","TopLayer","KTT0005B_N","6194.291mil","5895.000mil","0","SIMPLE SWITCHER® Power Converter 150 KHz 1A Step-Down Voltage Regulator, 5-pin TO-263, Pb-Free"
+"U2","IRM-15-15","TopLayer","IRM-15_MWU","2055.827mil","6624.449mil","180","No Description Available"
+"U1","DSPIC33CK256MP508-IPT","TopLayer","TQFP80_PT_MCH","4165.000mil","4795.000mil","0","No Description Available"
+"TVS1","SZ1SMB36CAT3G","TopLayer","SMB-2_4P60X3P95_ONS","5320.000mil","7110.000mil","180","No Description Available"
+"SW4","430182043816","TopLayer","430182043816","3460.000mil","5635.000mil","0","Switch Tactile N.O. SPST Round Button Gull Wing 0.05A 12VDC 1000000Cycles 1.57N SMD Reel"
+"SW1","430182043816","TopLayer","430182043816","4885.000mil","4705.000mil","0","Switch Tactile N.O. SPST Round Button Gull Wing 0.05A 12VDC 1000000Cycles 1.57N SMD Reel"
+"R_MCLR","ESR03EZPJ103","TopLayer","FP-ESR03-IPC_C","3325.000mil","5330.000mil","180","10kO ±5% 0.25W 0603 Anti-Surge Chip Resistor AEC-Q200"
+"R52","RR0816Q-750-D","TopLayer","FP-RR0816-IPC_B","6635.000mil","3960.000mil","0","75O ±0.5% 0.0625W 1/16W Chip Resistor 0603 (1608 Metric) Thin Film"
+"R41","RR0816Q-750-D","TopLayer","FP-RR0816-IPC_B","3070.001mil","5335.000mil","180","75O ±0.5% 0.0625W 1/16W Chip Resistor 0603 (1608 Metric) Thin Film"
+"R40","RR0816Q-750-D","TopLayer","FP-RR0816-IPC_B","3070.000mil","5185.000mil","180","75O ±0.5% 0.0625W 1/16W Chip Resistor 0603 (1608 Metric) Thin Film"
+"R39","RR0816Q-750-D","TopLayer","FP-RR0816-IPC_B","3070.001mil","5040.000mil","180","75O ±0.5% 0.0625W 1/16W Chip Resistor 0603 (1608 Metric) Thin Film"
+"R38","RR0816Q-750-D","TopLayer","FP-RR0816-IPC_B","3070.001mil","4605.000mil","180","75O ±0.5% 0.0625W 1/16W Chip Resistor 0603 (1608 Metric) Thin Film"
+"R37","RR0816Q-750-D","TopLayer","FP-RR0816-IPC_B","3070.000mil","4890.000mil","180","75O ±0.5% 0.0625W 1/16W Chip Resistor 0603 (1608 Metric) Thin Film"
+"R36","RR0816Q-750-D","TopLayer","FP-RR0816-IPC_B","3068.569mil","4745.000mil","180","75O ±0.5% 0.0625W 1/16W Chip Resistor 0603 (1608 Metric) Thin Film"
+"R19","ERJ3EKF1002V","TopLayer","RESC1609X55X30LL15T15","3320.000mil","4805.000mil","0","Chip Resistor, 10 KOhm, +/- 1%, 0.1 W, -55 to 155 degC, 0603 (1608 Metric), RoHS, Tape and Reel"
+"R18","ERJ-3EKF1000V","TopLayer","RESC1608X55X30LL15T15","3315.000mil","5045.000mil","0",""
+"R17_Potentiometer","P090S-14T20BR10K","TopLayer","RES-POT-3","5750.000mil","4072.795mil","180","9 mm Rotary Potentiometer, Insulated Shaft, Conductive Plastic Element, 10 KOhm, -20 to 70 degC, 3-Pin THD, RoHS, Tray"
+"R16","RR0816P-331-D","TopLayer","FP-RR0816-IPC_C","6180.000mil","4155.000mil","0","330O ±0.5% 0.0625W 1/16W Chip Resistor 0603 (1608 Metric) Thin Film"
+"R9","ERJ3EKF1002V","TopLayer","RESC1609X55X30LL15T15","3735.591mil","5335.000mil","0","Chip Resistor, 10 KOhm, +/- 1%, 0.1 W, -55 to 155 degC, 0603 (1608 Metric), RoHS, Tape and Reel"
+"R4","ERJ-3EKF1001V","TopLayer","RESC1608X55X30LL15T15","4760.000mil","4995.000mil","0",""
+"R3","ERJ3EKF1002V","TopLayer","RESC1609X55X30LL15T15","4754.410mil","5110.000mil","0","Chip Resistor, 10 KOhm, +/- 1%, 0.1 W, -55 to 155 degC, 0603 (1608 Metric), RoHS, Tape and Reel"
+"R2","RN73A1J470RFTD","TopLayer","FP-RN731J-MFG","3070.000mil","4450.000mil","0","42"
+"R1","RN73A1J470RFTD","TopLayer","FP-RN731J-MFG","3070.000mil","4295.000mil","0","42"
+"Lout","NR6028T680M","TopLayer","FP-NR6028-MFG","6620.000mil","6435.000mil","0","SMD Power Inductors 68uH ±20% 0.76A 0.546O"
+"J7","TB006-508-03BE","TopLayer","CONN3_TB006-508_CUD","445.000mil","6805.000mil","90","No Description Available"
+"J6","PREC003SAAN-RC","TopLayer","FP-PREC003SAAN-RC-MFG","450.000mil","4250.000mil","90","PREC003SAAN-RC Conn Header Vert 3POS 2.54MM"
+"J2","SFH11-PBPC-D10-ST-BK","TopLayer","FP-SFH11-PBPC-D10-ST-BK-MFG","490.000mil","5420.000mil","270","CONN HDR 20POS 0.1 GOLD PCB"
+"J1","SFH11-PBPC-D10-ST-BK","TopLayer","FP-SFH11-PBPC-D10-ST-BK-MFG","7990.000mil","6605.000mil","270","CONN HDR 20POS 0.1 GOLD PCB"
+"ICD1","B5B-PH-K-S(LF)(SN)","TopLayer","FP-B5B-PH-K-S_LF_SN-MFG","440.000mil","3641.260mil","90","CONN HEADER VERT 5POS 2MM"
+"Diode1","1N5822","TopLayer","FP-DO-201AD-MFG","6005.000mil","6775.000mil","90","DIODE SCHOTTKY 40V 3A DO201AD"
+"D2","LTST-C190KGKT","TopLayer","FP-LTST-C190KGKT-MFG","3335.000mil","4450.000mil","0","LED GREEN CLEAR CHIP SMD"
+"D1","LTST-C190KGKT","TopLayer","FP-LTST-C190KGKT-MFG","3335.000mil","4295.000mil","0","LED GREEN CLEAR CHIP SMD"
+"C_MCLR","GRM155R71C104KA88D","TopLayer","FP-GRM15-MFG","3310.748mil","5205.000mil","0","CAP CER 0.1UF 16V X7R 0402"
+"C99","08055C104KAZ2A","TopLayer","CAPC2013X94X50NL20T25","3587.480mil","7250.000mil","180",""
+"C98","TAJE476K035RNJ","TopLayer","FP-TAJE-MFG","3635.000mil","7055.000mil","180","47uF 35V  ±10% 900mO 2917  SMD Tantalum Capacitor"
+"C97","EEHAZS1H221B","TopLayer","FP-EEHA-G16-MFG","3640.000mil","6690.000mil","180","Conductive Polymer Hybrid Aluminum Electrolytic Capacitors 220uF ±20% 50V RADIAL TH 10x15.7mm"
+"C96","EEHAZS1H221B","TopLayer","FP-EEHA-G16-MFG","3645.000mil","6225.000mil","180","Conductive Polymer Hybrid Aluminum Electrolytic Capacitors 220uF ±20% 50V RADIAL TH 10x15.7mm"
+"C74","08055C104KAZ2A","TopLayer","CAPC2013X94X50NL20T25","7170.000mil","6275.000mil","180",""
+"C73","TAJE476K035RNJ","TopLayer","FP-TAJE-MFG","7170.000mil","6605.000mil","180","47uF 35V  ±10% 900mO 2917  SMD Tantalum Capacitor"
+"C72","EEHAZS1H221B","TopLayer","FP-EEHA-G16-MFG","7155.000mil","7065.000mil","180","Conductive Polymer Hybrid Aluminum Electrolytic Capacitors 220uF ±20% 50V RADIAL TH 10x15.7mm"
+"C71","08055C104KAZ2A","TopLayer","CAPC2013X94X50NL20T25","5357.480mil","5555.000mil","180",""
+"C70","TAJE476K035RNJ","TopLayer","FP-TAJE-MFG","5355.000mil","5845.000mil","180","47uF 35V  ±10% 900mO 2917  SMD Tantalum Capacitor"
+"C69","EEHAZS1H221B","TopLayer","FP-EEHA-G16-MFG","5336.575mil","6245.000mil","180","Conductive Polymer Hybrid Aluminum Electrolytic Capacitors 220uF ±20% 50V RADIAL TH 10x15.7mm"
+"C68","EEHAZS1H221B","TopLayer","FP-EEHA-G16-MFG","5325.000mil","6720.000mil","180","Conductive Polymer Hybrid Aluminum Electrolytic Capacitors 220uF ±20% 50V RADIAL TH 10x15.7mm"
+"C19","GRM155R71C104KA88D","TopLayer","FP-GRM15-MFG","3310.000mil","4680.000mil","0","CAP CER 0.1UF 16V X7R 0402"
+"C18","GRM155R71C104KA88D","TopLayer","FP-GRM15-MFG","3310.748mil","4925.000mil","0","CAP CER 0.1UF 16V X7R 0402"
+"C5","CC0603KRX7R9BB471","TopLayer","FP-CC0603-DA-MFG","3590.000mil","5335.000mil","0","CAP CER 470PF 50V X7R 0603"
+"C2","GRM155R71C104KA88D","TopLayer","FP-GRM15-MFG","6165.000mil","4005.000mil","0","CAP CER 0.1UF 16V X7R 0402"
+"C1","GRM155R71C104KA88D","TopLayer","FP-GRM15-MFG","4740.000mil","5235.000mil","180","CAP CER 0.1UF 16V X7R 0402"

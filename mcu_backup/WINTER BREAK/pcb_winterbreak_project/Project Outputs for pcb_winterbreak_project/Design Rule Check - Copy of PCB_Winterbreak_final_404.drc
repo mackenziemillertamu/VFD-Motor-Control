@@ -1,0 +1,72 @@
+Protel Design System Design Rule Check
+PCB File : F:\ALTIUM\WINTER BREAK\pcb_winterbreak_project\Copy of PCB_Winterbreak_final_404.PcbDoc
+Date     : 3/22/2025
+Time     : 5:19:51 PM
+
+Processing Rule : Clearance Constraint (Gap=5mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=5mil) (Max=500mil) (Preferred=10mil) (All)
+Rule Violations :0
+
+Processing Rule : Routing Topology Rule(Topology=Shortest) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=15mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=10mil) (Max=800mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=3.8mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=5mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=5mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Matched Lengths(Tolerance=25mil) (InNetClass('mSATARx'))
+Rule Violations :0
+
+Processing Rule : Matched Lengths(Tolerance=25mil) (InNetClass('mSATATx'))
+Rule Violations :0
+
+Processing Rule : Matched Lengths(Tolerance=5mil) (InNetClass('I210Rx'))
+Rule Violations :0
+
+Processing Rule : Matched Lengths(Tolerance=5mil) (InNetClass('I210Tx'))
+Rule Violations :0
+
+Processing Rule : Matched Lengths(Tolerance=5mil) (InNetClass('PCIERx'))
+Rule Violations :0
+
+Processing Rule : Matched Lengths(Tolerance=5mil) (InNetClass('PCIETx'))
+Rule Violations :0
+
+Processing Rule : Matched Lengths(Tolerance=25mil) (InNetClass('PCIECLK'))
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (Disabled)(All)
+Rule Violations :0
+
+
+Violations Detected : 0
+Waived Violations : 0
+Time Elapsed        : 00:00:01

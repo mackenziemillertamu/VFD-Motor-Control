@@ -1,0 +1,4 @@
+Added Pin To Net: NetName=RE3 Pin=C2-2
+Added Pin To Net: NetName=buck_out_+3V3 Pin=J1-16
+Added Pin To Net: NetName=RE8 Pin=J1-17
+Added Pin To Net: NetName=RE3 Pin=R16-1
