@@ -192,8 +192,8 @@ Ryan:
 
 Apr 10
 Mackenzie: 
-  This week - 
-  Next week - 
+  This week - assembled new parts, retested pwm and relay control, completed pwm and relay control, starting validation
+  Next week - work on validating the system and subsystem , finish feedback integration, prepare for final presentation
 
 Andrew:
   This week - Validated buck converter and AC/DC converter, flashed on updated code
@@ -209,8 +209,8 @@ Ryan:
 
 Apr 17
 Mackenzie: 
-  This week - 
-  Next week - 
+  This week - helped teammate fix leds, complete subsystem validation for pwm integration, complete relay validation, validate feedback subsystem
+  Next week - full system integration and validation, complete subsystem validation for diagnostic feedback, prepare for demo, work on final report
 
 Andrew:
   This week - Fixed LEDs; validated LEDs, potentiometer, and PWM outputs (completed subsystem validation with firmware and optoelectronics); flashed on final code
